@@ -26,10 +26,13 @@ const productsSchema=new mongoose.Schema({
     company:{
         type:String,
         enum:{
-            enum:['ikea','liddy','sodimac','easy'],
+            values:['ikea','liddy','caressa','marcos'],
             message:'{value} no tiene stock'
 
         }
+    },
+    img:{
+        type:String
     }
 })
 
@@ -38,3 +41,7 @@ module.exports=mongoose.model('Product',productsSchema)
 // const miColleccion=mongoose.model('Product',productsSchema)
 // module.exports= miColleccion
 
+
+//MERN MONGO EXPRESS REACT NODEJS
+
+//CRUD USUARIOS PRODUCTS
